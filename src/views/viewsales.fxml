@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="439.0" prefWidth="606.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ViewSalesController">
+   <children>
+      <DatePicker fx:id="dateselect" layoutX="125.0" layoutY="14.0" onAction="#getSalesByDate" />
+      <TableView fx:id="salesTable" layoutX="1.0" layoutY="47.0" prefHeight="339.0" prefWidth="606.0">
+        <columns>
+            <TableColumn fx:id="saleIdColumn" prefWidth="113.0" text="Sale Id" />
+            <TableColumn fx:id="timeColumn" prefWidth="94.0" text="Time" />
+            <TableColumn fx:id="itemColumn" prefWidth="151.0" text="Number Of Items" />
+            <TableColumn fx:id="totalColumn" prefWidth="117.0" text="Total" />
+            <TableColumn fx:id="creditColumn" prefWidth="129.0" text="Credited" />
+        </columns>
+      </TableView>
+      <Label layoutX="7.0" layoutY="398.0" prefHeight="25.0" prefWidth="54.0" text="Total :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="menuBtn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToMenu" text="Menu" />
+      <Button layoutX="504.0" layoutY="393.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="67.0" style="-fx-background-color: lightblue;" text="clear" />
+      <Label fx:id="grandtotal" layoutX="61.0" layoutY="401.0" prefHeight="19.0" prefWidth="89.0" />
+      <Label layoutX="172.0" layoutY="399.0" text="Credited :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalcredited" layoutX="259.0" layoutY="398.0" prefHeight="19.0" prefWidth="89.0" />
+      <Label layoutX="359.0" layoutY="401.0" prefHeight="19.0" prefWidth="46.0" text="Cash :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalcash" layoutX="424.0" layoutY="401.0" prefHeight="19.0" prefWidth="73.0" />
+      <Button layoutX="491.0" layoutY="14.0" mnemonicParsing="false" onAction="#viewSale" style="-fx-background-color: lightgreen;" text="View sale" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.viewCustomersControllers">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToMenu" text="Menu" />
+      <Button layoutX="237.0" layoutY="357.0" mnemonicParsing="false" onAction="#delete" prefHeight="29.0" prefWidth="87.0" style="-fx-background-color: lightblue;" text="DELETE" />
+      <TableView fx:id="debtorsTable" layoutY="48.0" prefHeight="309.0" prefWidth="605.0">
+         <columns>
+            <TableColumn fx:id="idColumn" prefWidth="75.0" text="Id No" />
+            <TableColumn fx:id="nameColumn" prefWidth="143.0" text="Name" />
+            <TableColumn fx:id="phoneColumn" prefWidth="134.0" text="Phone Number" />
+            <TableColumn fx:id="balanceColumn" prefWidth="126.0" text="Balance" />
+            <TableColumn fx:id="addressColumn" prefWidth="126.0" text="Address" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="371.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddCustomerContoller">
+   <children>
+      <Label fx:id="errorlabel" layoutX="189.0" layoutY="61.0" prefHeight="19.0" prefWidth="189.0" textFill="#d31515" />
+      <TextField fx:id="id_no" layoutX="179.0" layoutY="100.0" prefHeight="29.0" prefWidth="189.0" promptText="ID NUMBER" />
+      <TextField fx:id="name" layoutX="179.0" layoutY="129.0" prefHeight="29.0" prefWidth="189.0" promptText="FULL NAME" />
+      <TextField fx:id="address" layoutX="179.0" layoutY="158.0" prefHeight="29.0" prefWidth="189.0" promptText="ADDRESS" />
+      <TextField fx:id="phone" layoutX="179.0" layoutY="187.0" prefHeight="29.0" prefWidth="189.0" promptText="PHONE" />
+      <Button fx:id="saveBtn" layoutX="178.0" layoutY="242.0" mnemonicParsing="false" onAction="#save" prefHeight="29.0" prefWidth="189.0" style="-fx-background-color: lightblue;" text="Save" />
+      <Button fx:id="clearBtn" layoutX="178.0" layoutY="271.0" mnemonicParsing="false" onAction="#clear" prefHeight="29.0" prefWidth="189.0" style="-fx-background-color: lightgreen;" text="Clear" />
+      <Label layoutX="175.0" layoutY="11.0" prefHeight="35.0" prefWidth="170.0" text="Add Customer ">
+         <font>
+            <Font name="Bodoni Bd BT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="menuBtn" layoutX="21.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToMenu" text="menu" />
+   </children>
+</AnchorPane>

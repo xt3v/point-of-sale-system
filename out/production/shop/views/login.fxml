@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="473.0" scaleShape="false" style="-fx-background-color: white; -fx-background-image: FB_IMG_15152269373571711;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+   <children>
+      <Label fx:id="errorLabel" layoutX="146.0" layoutY="72.0" prefHeight="29.0" prefWidth="175.0" style="-fx-text-fill: red;" textFill="#b21c1c" />
+      <Button fx:id="loginBtn" layoutX="173.0" layoutY="212.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="29.0" prefWidth="120.0" style="-fx-background-color: lightblue;" text="LOGIN" />
+      <TextField fx:id="username" layoutX="156.0" layoutY="101.0" promptText="User Name" />
+      <PasswordField fx:id="password" layoutX="156.0" layoutY="136.0" promptText="Password" />
+      <Label layoutX="164.0" layoutY="17.0" prefHeight="29.0" prefWidth="137.0" text="Cashier Login">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

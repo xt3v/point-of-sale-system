@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="366.0" prefWidth="524.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddProductController">
+   <children>
+      <Label layoutX="196.0" layoutY="33.0" text="ADD  PRODUCT">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="178.0" layoutY="219.0" mnemonicParsing="false" onAction="#save" prefHeight="29.0" prefWidth="169.0" style="-fx-background-color: lightblue;" text="SAVE" />
+      <Button layoutX="177.0" layoutY="248.0" mnemonicParsing="false" onAction="#clear" prefHeight="29.0" prefWidth="169.0" style="-fx-background-color: lightgreen;" text="CLEAR" />
+      <TextField fx:id="name" layoutX="181.0" layoutY="104.0" prefHeight="29.0" prefWidth="169.0" promptText="NAME" />
+      <TextField fx:id="description" layoutX="181.0" layoutY="133.0" prefHeight="29.0" prefWidth="169.0" promptText="PRODUCT DESCRIPTION" />
+      <TextField fx:id="price" layoutX="181.0" layoutY="162.0" prefHeight="29.0" prefWidth="169.0" promptText="UNIT PRICE" />
+      <Button layoutX="7.0" layoutY="10.0" mnemonicParsing="false" onAction="#goToMenu" text="Menu" />
+      <Label fx:id="errorlabel" layoutX="180.0" layoutY="73.0" prefHeight="19.0" prefWidth="162.0" textFill="#ee1717" />
+   </children>
+</AnchorPane>

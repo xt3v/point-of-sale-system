@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DisplayStockController">
+   <children>
+      <Button layoutX="251.0" layoutY="350.0" mnemonicParsing="false" onAction="#addStock" prefHeight="29.0" prefWidth="105.0" style="-fx-background-color: lightblue;" text="Stock" textFill="#200549">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="7.0" mnemonicParsing="false" onAction="#goToMenu" text="Menu" />
+      <Button layoutX="494.0" layoutY="7.0" mnemonicParsing="false" onAction="#populateList" style="-fx-background-color: lightgreen;" text="Refresh" />
+      <TableView fx:id="stockTable" layoutY="45.0" prefHeight="298.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="skuColumn" prefWidth="109.0" text="SKU" />
+          <TableColumn fx:id="nameColumn" prefWidth="183.0" text="PRODUCT NAME" />
+            <TableColumn fx:id="quantityColumn" prefWidth="128.0" text="QUANTITY" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="218.0" text="DESCRIPTION" />
+        </columns>
+      </TableView>
+      <Button layoutX="399.0" layoutY="7.0" mnemonicParsing="false" onAction="#deleteProduct" style="-fx-background-color: lightblue;" text="DELETE" />
+      <Button layoutX="324.0" layoutY="7.0" mnemonicParsing="false" onAction="#editProduct" style="-fx-background-color: lightblue;" text="EDIT" />
+   </children>
+</AnchorPane>

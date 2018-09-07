@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PosController">
+   <center>
+      <TableView fx:id="posTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+            <TableColumn fx:id="skuColumn" prefWidth="85.0" text="Sku" />
+          <TableColumn fx:id="nameColumn" prefWidth="145.0" text="Name" />
+          <TableColumn fx:id="priceColumn" prefWidth="125.0" text="Unit Price" />
+            <TableColumn fx:id="piecesColumn" prefWidth="132.0" text="Pieces" />
+            <TableColumn fx:id="subTotalColumn" prefWidth="112.0" text="Sub Total" />
+        </columns>
+      </TableView>
+   </center>
+   <top>
+      <AnchorPane prefHeight="79.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="sku" layoutX="138.0" layoutY="11.0" promptText="Sku" />
+            <Button fx:id="searchBtn" layoutX="320.0" layoutY="11.0" mnemonicParsing="false" onAction="#searchSku" style="-fx-background-color: lightblue;" text="Search" />
+            <Label layoutX="7.0" layoutY="46.0" prefHeight="19.0" prefWidth="54.0" text="Name :" />
+            <Label fx:id="productname" layoutX="52.0" layoutY="46.0" prefHeight="19.0" prefWidth="134.0" />
+            <Label layoutX="355.0" layoutY="46.0" prefHeight="19.0" prefWidth="51.0" text="Pieces : " />
+            <TextField fx:id="piecesSelected" layoutX="419.0" layoutY="41.0" prefHeight="26.0" prefWidth="40.0" />
+            <Label layoutX="204.0" layoutY="46.0" prefHeight="19.0" prefWidth="39.0" text="price :" />
+            <Label fx:id="productprice" layoutX="243.0" layoutY="46.0" prefHeight="19.0" prefWidth="101.0" />
+            <Button fx:id="addToCartBtn" layoutX="491.0" layoutY="11.0" mnemonicParsing="false" onAction="#addProduct" prefHeight="29.0" prefWidth="64.0" style="-fx-background-color: lightgreen;" text="Add" />
+            <Button layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#goToMenu" text="Menu" />
+            <Button layoutX="493.0" layoutY="52.0" mnemonicParsing="false" onAction="#removeItem" style="-fx-background-color: lightblue;" text="Remove" />
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="92.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="31.0" layoutY="15.0" prefHeight="23.0" prefWidth="86.0" text="Grand Total :" />
+            <Label fx:id="grandtotal" layoutX="120.0" layoutY="17.0" prefHeight="19.0" prefWidth="105.0" text="0" />
+            <Label layoutX="32.0" layoutY="57.0" prefHeight="19.0" prefWidth="84.0" text="Cash Given :" />
+            <TextField fx:id="cashgiven" layoutX="122.0" layoutY="52.0" onKeyReleased="#calculateBalance" prefHeight="29.0" prefWidth="71.0" />
+            <Label layoutX="300.0" layoutY="17.0" prefHeight="19.0" prefWidth="64.0" text="Balance :" />
+            <Button fx:id="checkoutBtn" layoutX="259.0" layoutY="52.0" mnemonicParsing="false" onAction="#checkOut" style="-fx-background-color: lightblue;" text="Check Out" />
+            <Label fx:id="balance" layoutX="393.0" layoutY="17.0" prefHeight="19.0" prefWidth="100.0" text="0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
